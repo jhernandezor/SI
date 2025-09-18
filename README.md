@@ -40,12 +40,7 @@ Se desarrolla un dashboard en Power BI llamado "Lab 1" que, además de cubrir lo
 - **1 filtro de fecha**  
   Se implementa un filtro de fechas interactivo para la exploración de los datos.
 - **Colores corporativos**  
-  Se aplican los colores corporativos de Azucar Manuelita en todos los elementos visuales del dashboard.
-
-A continuación, se adjunta una imagen demostrativa del dashboard en Power BI y la configuración de las medidas DAX utilizadas:
-
-![Dashboard Power BI - Lab 1](image.jpg)
-![Medidas DAX Power BI](image.jpg)
+  Se aplican los colores corporativos de Azúcar Manuelita en todos los elementos visuales del dashboard.
 
 ---
 
