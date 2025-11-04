@@ -1,56 +1,22 @@
-# Proyecto TechStore - Tableau y Power BI 📊🟩
-
-Este repositorio contiene dos dashboards completos para el análisis de ventas de TechStore, uno realizado en Tableau y otro en Power BI.
-
----
-
-## 📊 Dashboard Tableau
-
-En el dashboard de Tableau se presenta un análisis completo y dinámico de las ventas de TechStore. El análisis incluye:
-
-### 📅 Visualización de ventas por día  
-Se muestra un gráfico de líneas que presenta la cantidad de unidades vendidas diariamente. Este gráfico permite observar tendencias y picos de ventas. 📈
-
-### 🥇 Top 10 productos más vendidos  
-Se destaca un gráfico de barras horizontales con los 10 productos de mayor venta, lo que facilita la identificación de los productos más exitosos. 🛍️
-
-### 🍰 Ventas por categoría  
-Se visualiza un gráfico circular segmentando las ventas por categoría de producto (accesorios, laptops, smartphones, etc.), proporcionando una distribución clara de las ventas. 🎯
-
-### 🧑‍💼 Tabla performance vendedores  
-Se incluye una tabla detallada donde cada vendedor aparece con sus totales de unidades vendidas, ingresos, costo y ganancia, permitiendo evaluar el desempeño individual. 💼
-
-### 🗺️ Mapa de unidades vendidas por ciudad  
-Se muestra un mapa interactivo con las ventas por ciudad, identificando las zonas geográficas más relevantes. 📍
-
-### ⚙️ Filtro de rango de fechas  
-Se aplica un filtro de fechas que sincroniza todas las visualizaciones para un análisis flexible entre distintos periodos. ⏳
-
-### 🎨 Colores corporativos  
-El dashboard utiliza colores corporativos de Azucar Manuelita, garantizando coherencia gráfica y profesionalismo.
-
----
-
-## 🟩 Dashboard Power BI: "Lab 1"
-
-Se desarrolla un dashboard en Power BI llamado "Lab 1" que, además de cubrir los mismos objetivos de visualización, cumple los siguientes requisitos técnicos:
-
-- **2 medidas DAX**  
-  Se generan dos medidas DAX para cálculos personalizados, como "Ingresos Totales" y "Margen %".
-- **1 filtro de fecha**  
-  Se implementa un filtro de fechas interactivo para la exploración de los datos.
-- **Colores corporativos**  
-  Se aplican los colores corporativos de Azúcar Manuelita en todos los elementos visuales del dashboard.
-
----
-
-## ✔️ Cumplimiento de condiciones
-
-- Se garantiza claridad en cada visualización, con títulos y leyendas descriptivas.
-- Se ofrece interactividad por medio de filtros, para una navegación intuitiva y dinámica.
-- Se cubren perspectivas claves: producto, categoría, vendedor y geografía, brindando un análisis integral.
-- Se emplean colores corporativos en ambos dashboards, cumpliendo tanto la identidad visual solicitada como las exigencias técnicas y gráficas.
-
----
-
-Gracias por revisar este proyecto. 🎉
+#Análisis del Video sobre Funciones Lambda
+El video proporciona una visión general de las Funciones Lambda de AWS, un servicio fundamental dentro de la arquitectura conocida como serverless.
+La idea principal de este modelo es que el desarrollador no tiene que administrar servidores. En lugar de eso, Amazon provee containers (entornos de ejecución) que incluyen todo lo necesario para que el código funcione sin problemas. El trabajo del desarrollador, por lo tanto, se simplifica: solo debe escribir su código, subirlo a la plataforma Lambda y realizar unas configuraciones mínimas.
+#Cálculo de Costos
+Una ventaja clave es la elasticidad del sistema. Amazon ajusta la cantidad de contenedores automáticamente: si llegan más requerimientos, despliega más contenedores, y si la demanda baja, despliega menos.
+Este modelo elástico se refleja directamente en el costo. El video aclara que solo se paga por dos factores: la memoria utilizada durante el tiempo que la función se está ejecutando, más un valor adicional por el número total de veces que la función fue llamada.
+Funcionamiento Técnico y Límites
+El servicio es compatible con varios lenguajes populares (Java, Node JS, Python, etc.). Además, si se requiere un lenguaje distinto a los oficiales, se puede utilizar una API para crear ambientes de ejecución personalizados.
+Una vez que el código, en el lenguaje de preferencia, está en AWS, se define un "evento de activación" que disparará su ejecución. Es importante notar que existe una limitación: el tiempo máximo de ejecución de una función está fijado por Amazon en 15 minutos.
+#El Ciclo de Vida
+El video explica el ciclo de vida de una ejecución. Un contenedor es un paquete de software aislado que tiene todo lo necesario para ejecutar el código, independientemente del sistema operativo de la máquina.
+El flujo básico es:
+1.	Ocurre un evento (como una subida de archivos).
+2.	Se prepara un contenedor.
+3.	El código se ejecuta.
+4.	El contenedor se desecha.
+Sin embargo, aquí se presenta una optimización clave: si no ha pasado mucho tiempo desde la última ejecución, Lambda reutiliza un contenedor que ya estaba creado. Esto ofrece una ventaja de velocidad, ya que se evita el proceso de crear un container y cargar nuestro código desde cero.
+Cuando llegan muchos eventos al mismo tiempo (procesamiento concurrente), Lambda gestiona la carga utilizando los contenedores que están libres (reutilizados) y creando nuevos contenedores si es necesario.
+#Buenas Prácticas
+Finalmente, el análisis resalta dos principios de diseño fundamentales:
+1.	Una función Lambda debe ser la unidad básica de la lógica de negocios. No debe ser un programa complejo, sino estar restringida a una sola tarea. Los casos de uso ideales incluyen procesamiento de archivos o streaming de datos.
+2.	Esta es una recomendación crucial de Amazon. Una función idempotente es aquella que, aunque se ejecute varias veces (dos, tres o más), el resultado final en el sistema es el mismo que si se hubiera ejecutado una sola vez. La razón es que Amazon garantiza la ejecución al menos una vez, pero esto no significa que garantice una única vez. Diseñar con idempotencia previene errores o duplicidad en la lógica de negocio.
