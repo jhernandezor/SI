@@ -1,3 +1,4 @@
+Joan Nicolás Hernández Ortegón
 # Análisis del Video sobre Funciones Lambda
 El video proporciona una visión general de las Funciones Lambda de AWS, un servicio fundamental dentro de la arquitectura conocida como serverless.
 La idea principal de este modelo es que el desarrollador no tiene que administrar servidores. En lugar de eso, Amazon provee containers (entornos de ejecución) que incluyen todo lo necesario para que el código funcione sin problemas. El trabajo del desarrollador, por lo tanto, se simplifica: solo debe escribir su código, subirlo a la plataforma Lambda y realizar unas configuraciones mínimas.
