@@ -1,56 +1,22 @@
-# Proyecto TechStore - Tableau y Power BI 📊🟩
+# Diferencias entre ERP y CRM
 
-Este repositorio contiene dos dashboards completos para el análisis de ventas de TechStore, uno realizado en Tableau y otro en Power BI.
+**ERP y CRM** son programas esenciales para mejorar la eficiencia y rentabilidad de un negocio.  
+Son los dos softwares con mayor implementación en el mercado, y ambos son lo suficientemente personalizables para adaptarse a cualquier tipo de empresa.
 
----
+## Enfoque diferente
 
-## 📊 Dashboard Tableau
+### ERP (Enterprise Resource Planning) — *Planificación de Recursos Empresariales*
+- **Funcionalidad:** Enfocado en la gestión interna de la empresa (*BackOffice*).  
+- **Objetivos:** Optimizar los procesos internos de la empresa (reducir costos, aumentar productividad y optimizar recursos).  
+  Se busca centralizar toda la información.
 
-En el dashboard de Tableau se presenta un análisis completo y dinámico de las ventas de TechStore. El análisis incluye:
+### CRM (Customer Relationship Management) — *Gestión de la Relación con los Clientes*
+- **Funcionalidad:** Se centra en las tareas y estrategias externas de la empresa (*FrontOffice*).  
+- **Objetivos:** Conocer las necesidades de los clientes, analizar tendencias de ventas y automatizar procesos comerciales.  
+  Su meta es aumentar los ingresos mediante la mejora de las estrategias de ventas y fidelización.
 
-### 📅 Visualización de ventas por día  
-Se muestra un gráfico de líneas que presenta la cantidad de unidades vendidas diariamente. Este gráfico permite observar tendencias y picos de ventas. 📈
+## Integración
 
-### 🥇 Top 10 productos más vendidos  
-Se destaca un gráfico de barras horizontales con los 10 productos de mayor venta, lo que facilita la identificación de los productos más exitosos. 🛍️
+Es habitual que los fabricantes de software ofrezcan un **ERP con su propio módulo CRM**, o en su defecto, produzcan **ERP con integraciones nativas** con las plataformas CRM más populares.  
+De esta forma, se logra que la información recopilada en el CRM sirva como datos de entrada para el ERP.
 
-### 🍰 Ventas por categoría  
-Se visualiza un gráfico circular segmentando las ventas por categoría de producto (accesorios, laptops, smartphones, etc.), proporcionando una distribución clara de las ventas. 🎯
-
-### 🧑‍💼 Tabla performance vendedores  
-Se incluye una tabla detallada donde cada vendedor aparece con sus totales de unidades vendidas, ingresos, costo y ganancia, permitiendo evaluar el desempeño individual. 💼
-
-### 🗺️ Mapa de unidades vendidas por ciudad  
-Se muestra un mapa interactivo con las ventas por ciudad, identificando las zonas geográficas más relevantes. 📍
-
-### ⚙️ Filtro de rango de fechas  
-Se aplica un filtro de fechas que sincroniza todas las visualizaciones para un análisis flexible entre distintos periodos. ⏳
-
-### 🎨 Colores corporativos  
-El dashboard utiliza colores corporativos de Azucar Manuelita, garantizando coherencia gráfica y profesionalismo.
-
----
-
-## 🟩 Dashboard Power BI: "Lab 1"
-
-Se desarrolla un dashboard en Power BI llamado "Lab 1" que, además de cubrir los mismos objetivos de visualización, cumple los siguientes requisitos técnicos:
-
-- **2 medidas DAX**  
-  Se generan dos medidas DAX para cálculos personalizados, como "Ingresos Totales" y "Margen %".
-- **1 filtro de fecha**  
-  Se implementa un filtro de fechas interactivo para la exploración de los datos.
-- **Colores corporativos**  
-  Se aplican los colores corporativos de Azúcar Manuelita en todos los elementos visuales del dashboard.
-
----
-
-## ✔️ Cumplimiento de condiciones
-
-- Se garantiza claridad en cada visualización, con títulos y leyendas descriptivas.
-- Se ofrece interactividad por medio de filtros, para una navegación intuitiva y dinámica.
-- Se cubren perspectivas claves: producto, categoría, vendedor y geografía, brindando un análisis integral.
-- Se emplean colores corporativos en ambos dashboards, cumpliendo tanto la identidad visual solicitada como las exigencias técnicas y gráficas.
-
----
-
-Gracias por revisar este proyecto. 🎉
